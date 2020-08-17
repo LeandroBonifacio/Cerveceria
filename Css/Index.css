@@ -1,0 +1,147 @@
+* {
+    padding: 0px;
+    margin: 0px;
+            }
+#Header{
+   
+    
+  
+    width: 560px;
+    font-family: sans-serif;
+      margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+ul, ol{
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+   
+}
+
+.nav li a{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    
+    
+     
+}
+
+.nav li a:hover{
+    background-color: #434343;
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width:140px; 
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+
+
+.nav > li{
+    float: left;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap');
+@import url(C:\Users\Pila\Desktop\Web\Css\menu.css);
+@import url(Banner.css);
+
+*
+	{
+		margin:0;
+		padding: 0;
+		box-sizing: border-box;
+
+	}
+
+	body{
+		font-family: 'Fira Sans Extra Condensed', sans-serif;
+	}
+
+	header{
+		width: 100%;
+		height: 50px;
+		background: black;
+		color: black;
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100; 
+
+	}
+
+	.contenedor-header{
+		width: 100%;
+		margin: auto; 
+	}
+
+	h1{
+		float: left;
+        margin-top:5px;
+	}
+
+
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+
+
+#banner .Contenedor{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#banner h2{
+    font-size: 28px;
+    color: black;
+    
+}
+
+#banner p{
+    color: black;
+}
+
+#banner a {
+    display: block;
+    width: 100px;
+    color: #black;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid #fff
+    
+}
+
+#banner a:hover{
+    background: rgba(51,51,51,0.5);
+}
+
+
+
+
+
+

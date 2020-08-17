@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+		  Produccion
+        </title>
+        <link rel="icon" href="img/icon/add-user.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+		<link rel="stylesheet" href="css/style.css">
+         <link rel="stylesheet" href="../Css/Index.css">
+		<style type="text/css">
+			.centered-form{
+				margin-top: 60px;
+			}
+			.centered-form .panel{
+				background: rgba(255, 255, 255, 0.8);
+				box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+			}
+		</style>
+	</head>
+    <body>
+           <header>      
+            <div id="Header">
+            <ul class="nav">
+                <li> <a href="../Index.HTML"> Inicio</a>
+                <li> <a href="Menu-Produccion.php"> Produccion</a>
+                    <ul>
+                      <li> <a href=""> Recetas</a></li>
+                    </ul>
+                </li> 
+                <li> <a href="../Ingredientes/Menu-Ingredientes.html"> Ingredientes</a></li>
+                <li> <a href=""> Compras</a></li>
+                <li> <a href="../Clientes/Menu-Clientes.html"> Clientes</a></li>
+                <li> <a href=""> Ventas</a></li>
+    
+           </ul>
+         </div> 
+      </header>
+		<div class="container">
+			<div class="row centered-form">
+				<div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<i class="fas fa-user-plus"></i> Alta de produccion
+								<small><b><font color="red"> 
+                                    </font></b></small></h3>
+						</div>
+				
+						<div class="panel-body">
+							
+							<form action="Alta-produccion.php" method="post" role="form">
+								<br>
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="date" name="fecha" id="fecha" class='form-control' required>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="cantAgua" id="cantAgua" class='form-control' maxlength="100" placeholder="Cantidad de agua" required>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="text" name="comentarios" id="comentarios" class='form-control' maxlength="64" placeholder="Comentarios" required>
+								</div>
+                                <div class="form-group">
+									<input type="text" name="Litros" id="Litros" class='form-control' maxlength="64" placeholder="Litros de salida" required>
+								</div>
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+									   <input type="text" name="tempMaceracion" id="tempMaceracion" class='form-control' maxlength="64" placeholder="Temperatura de maceración" required>
+								</div>
+                                
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="tiempoMaceracion" id="tiempoMaceracion" class='form-control' maxlength="15" placeholder="Tiempo de maceración" required>
+										</div>
+									</div>
+								</div>
+                                <div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+									   <input type="text" name="tempCoccion" id="tempCoccion" class='form-control' maxlength="64" placeholder="Temperatura de cocción" required>
+								</div>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="tiempoCoccion" id="tiempoCoccion" class='form-control' maxlength="15" placeholder="Tiempo de cocción" required>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="center">
+										<div class="form-group">
+											<button type="submit" class="btn btn-success"> Guardar datos <i class="fas fa-check-circle"></i></button>
+											<a href="../Index.HTML" class="btn btn-info add-new"> Regresar <i class="fas fa-reply-all"></i></a>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	</body>
+</html>
